@@ -1,0 +1,141 @@
+
+
+
+// Model Forms - Meeting.  Modify folders as needed.
+{
+  "title": "Meeting",
+  "name": "Meeting",
+  "fields": [
+    {
+      "name": "recurring_meeting",
+      "label": "Recurring Meeting",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "multiselect",
+        "source": "notes",
+        "folder": "05 Dayframe/Meetings/Recurring Meetings"
+      }
+    },
+    {
+      "name": "attendees",
+      "label": "Attendees",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "multiselect",
+        "source": "notes",
+        "folder": "05 Dayframe/CRM/People"
+      }
+    },
+    {
+      "name": "meetingDate",
+      "label": "Meeting Date",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "date",
+        "hidden": false
+      }
+    },
+    {
+      "name": "companies",
+      "label": "Companies",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "multiselect",
+        "source": "notes",
+        "folder": "05 Dayframe/CRM/Companies"
+      }
+    },
+    {
+      "name": "projects",
+      "label": "Projects",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "multiselect",
+        "source": "notes",
+        "folder": "05 Dayframe/Projects",
+        "folders": [
+          "05 Dayframe/Projects/Work",
+          "05 Dayframe/Projects/Personal"
+        ]
+      }
+    }
+  ],
+  "version": "1"
+}
+
+
+// Model Forms - Person.   Modify folders as needed.
+{
+  "title": "Person Details",
+  "name": "Person",
+  "fields": [
+    {
+      "name": "given_name",
+      "label": "Given Name",
+      "description": "",
+      "isRequired": true,
+      "input": {
+        "type": "text",
+        "hidden": false
+      }
+    },
+    {
+      "name": "surname",
+      "label": "Surname",
+      "description": "",
+      "isRequired": true,
+      "input": {
+        "type": "text",
+        "hidden": false
+      }
+    },
+    {
+      "name": "company",
+      "label": "Company",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "multiselect",
+        "source": "notes",
+        "folder": "05 Dayframe/CRM/Companies",
+        "allowUnknownValues": false,
+        "query": "",
+        "multi_select_options": []
+      }
+    },
+    {
+      "name": "title",
+      "label": "Title",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "text",
+        "hidden": false
+      }
+    },
+    {
+      "name": "birthday",
+      "label": "Birthday",
+      "description": "",
+      "isRequired": false,
+      "input": {
+        "type": "date",
+        "hidden": false
+      }
+    }
+  ],
+  "version": "1",
+  "template": {
+    "parsedTemplate": [],
+    "createInsertCommand": false,
+    "createNoteCommand": false
+  }
+}
+
+
+
